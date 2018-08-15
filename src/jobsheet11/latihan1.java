@@ -36,39 +36,7 @@ public class latihan1 {
     String s = "operasi";
     System.out.println("isi variabel s : "+ s);
     System.out.println("perbandingan isi r dengan s (Case Sensitive) : " + r.compareTo(s));
-    System.out.println("pada x terdapat huruf'a' : " + x.contains("a"));
-    
-    System.out.println("isi variabel x besar semua : " + x.toUpperCase());
-    System.out.println("isi variabel x kecil semua : " + x.toLowerCase());
-    
-    String t ="     operasi string      ";
-    System.out.println("isi variabel t : \""+ t.trim() + "\"");
-    System.out.println("isi variabel t tanpa spasi : \""+ t.trim() + "\"");
-    
-    System.out.println("gabungkan isi variabel x dan r : "+ x.concat(r));
-    System.out.println("karakter mulai posisi 3 divariabel x : " + x.substring(3));
-    System.out.println("karakter dari posisi 3-5 divariabel x : " + x.substring(3,6));
-    
-    String tolean = t.trim();
-    System.out.println("isi variabel tolean : "+ t.trim());
-    System.out.println("rubah 'i' jadi 'E' di variabel tolean: " + tolean.replace("i","E"));
-    
-    String[] arrT = tolean.split(" ");
-    System.out.println("pecah kata di variabel tolean : ");
-        for (String arrT1 : arrT) {
-            System.out.println(arrT1);
-        }
-    
-    String[] arrTr = tolean.split("r");
-    System.out.println("pecah berdasarkan huruf 'r' di variabel tolean : ");
-        for (String arrTr1 : arrTr) {
-            System.out.println(arrTr1);
-        }
-    double d = 1545454000;
-    System.out.println(String.format("Uang saya %,.4f", d));
-    
-    System.out.println(String.format(Locale.forLanguageTag("in-ID"),"Uang saya Rp %,.2f", d));
-
+  
 
     }}
 
