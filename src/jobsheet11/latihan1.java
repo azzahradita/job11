@@ -1,4 +1,7 @@
 package jobsheet11;
+
+import java.util.Locale;
+
 public class latihan1 {
     public static void main(String[] args) {
     String identitas = "AZ ZAHRA DITA PRATIWI / XRPL3 / 09";
@@ -52,13 +55,19 @@ public class latihan1 {
     
     String[] arrT = tolean.split(" ");
     System.out.println("pecah kata di variabel tolean : ");
-    for (int i = 0; i < arrT.length; i++) 
-        System.out.println(arrT[i]);
+        for (String arrT1 : arrT) {
+            System.out.println(arrT1);
+        }
     
     String[] arrTr = tolean.split("r");
     System.out.println("pecah berdasarkan huruf 'r' di variabel tolean : ");
-    for (int i = 0; i < arrTr.length; i++) 
-        System.out.println(arrTr[i]);
+        for (String arrTr1 : arrTr) {
+            System.out.println(arrTr1);
+        }
+    double d = 1545454000;
+    System.out.println(String.format("Uang saya %,.4f", d));
+    
+    System.out.println(String.format(Locale.forLanguageTag("in-ID"),"Uang saya Rp %,.2f", d));
 
 
     }}
