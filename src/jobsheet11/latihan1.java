@@ -43,6 +43,22 @@ public class latihan1 {
     System.out.println("isi variabel t tanpa spasi : \""+ t.trim() + "\"");
     
     System.out.println("gabungkan isi variabel x dan r : "+ x.concat(r));
+    System.out.println("karakter mulai posisi 3 divariabel x : " + x.substring(3));
+    System.out.println("karakter dari posisi 3-5 divariabel x : " + x.substring(3,6));
+    
+    String tolean = t.trim();
+    System.out.println("isi variabel tolean : "+ t.trim());
+    System.out.println("rubah 'i' jadi 'E' di variabel tolean: " + tolean.replace("i","E"));
+    
+    String[] arrT = tolean.split(" ");
+    System.out.println("pecah kata di variabel tolean : ");
+    for (int i = 0; i < arrT.length; i++) 
+        System.out.println(arrT[i]);
+    
+    String[] arrTr = tolean.split("r");
+    System.out.println("pecah berdasarkan huruf 'r' di variabel tolean : ");
+    for (int i = 0; i < arrTr.length; i++) 
+        System.out.println(arrTr[i]);
 
 
     }}
