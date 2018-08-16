@@ -14,7 +14,7 @@ public static void main(String[] args){
     String kalimat = tampilInput();
     String convert = vokal2Angka(kalimat);
     tampilPerKata(kalimat, convert);
-    tampilHasil(convert);
+
 }
 
     private static String tampilInput()
@@ -38,18 +38,4 @@ public static void main(String[] args){
             
         return kalimat;
     }    
-    private static void tampilPerKata(String kalimat, String convert)
-            {
-                String[] arrKal = kalimat.split(" ");
-                String[] arrCon = convert.split(" ");
-                
-                for (int i = 0; i < arrKal.length; i++) 
-                    System.out.println(arrKal[i]+" => "+ arrCon[i]);
-            }
-            
-            
-            private static void tampilHasil(String convert)
-            {
-                System.out.println("Kalimat Alay Angka : " + convert);
-            }           
 }
